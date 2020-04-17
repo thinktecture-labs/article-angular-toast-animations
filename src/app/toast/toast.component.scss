@@ -1,0 +1,18 @@
+:host {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 350px;
+  padding: 20px;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.labs-toast-item {
+  pointer-events: all;
+}
+
+div:not(:first-of-type) {
+  margin-top: 10px;
+}
