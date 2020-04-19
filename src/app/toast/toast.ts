@@ -1,4 +1,4 @@
 export class Toast {
   title: string;
-  description: string;
+  description?: string;
 }

@@ -5,7 +5,7 @@ import {ToastService} from './toast.service';
 import {of} from 'rxjs';
 import {ToastModule} from './toast.module';
 
-const items = [];
+const items = [{title: 'Toast Item'}];
 
 export default {
   title: 'Core | Toast / List',
@@ -30,6 +30,9 @@ export const Default = () => ({
   props: {
     create: button('Create toast', () => {
       items.push({title: `Item Title ${items.length}`});
+    }),
+    remove: button('Remove toast', () => {
+      items.splice(0, 1);
     }),
   },
 });

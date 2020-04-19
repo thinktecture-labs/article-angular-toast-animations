@@ -5,14 +5,18 @@
   bottom: 0;
   width: 350px;
   padding: 20px;
-  pointer-events: none;
-  overflow: hidden;
+  z-index: 1;
 }
 
-.labs-toast-item {
-  pointer-events: all;
-}
+div {
+  box-sizing: border-box;
+  overflow: visible;
+  transition: margin .3s linear;
+  perspective: 60px;
+  position: relative;
 
-div:not(:first-of-type) {
-  margin-top: 10px;
+
+  &:not(:first-child) {
+    margin-top: 15px;
+  }
 }
