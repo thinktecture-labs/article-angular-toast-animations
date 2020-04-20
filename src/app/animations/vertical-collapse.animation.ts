@@ -7,7 +7,5 @@ export const verticalCollapseAnimation = trigger('verticalCollapse', [
   state('void', style({
     height: '0',
   })),
-  transition('* => void', [
-    animate('.3s .3s ease'),
-  ]),
+  transition('* => void', animate('.3s .3s ease')),
 ]);

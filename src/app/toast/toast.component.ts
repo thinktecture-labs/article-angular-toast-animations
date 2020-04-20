@@ -20,9 +20,7 @@ import {verticalCollapseAnimation} from '../animations/vertical-collapse.animati
         opacity: 0,
         filter: 'blur(2px) saturate(50%)'
       })),
-      transition('void => *', [
-        animate('.3s ease-in-out'),
-      ]),
+      transition('void => *',  animate('.3s ease-in-out')),
     ]),
     trigger('slideOut', [
       state('*', style({
@@ -33,9 +31,7 @@ import {verticalCollapseAnimation} from '../animations/vertical-collapse.animati
         transform: 'translateX(100%) scale(.7)',
         opacity: 0,
       })),
-      transition('* => void', [
-        animate('.2s ease'),
-      ]),
+      transition('* => void', animate('.2s ease')),
     ]),
     verticalCollapseAnimation,
     triggerChildAnimation,
